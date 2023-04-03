@@ -9,7 +9,7 @@ body, html {
     /*display: flex;*/
     /*flex-direction: column; align-items: stretch;*/
 }
-@media screen and (min-width:260px) {
+@media screen and (min-width:260px) and (max-width:499px)  {
     .nav-links{
         padding: 0;
     }
@@ -73,12 +73,23 @@ body, html {
         display: flex;
         position: relative;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
         margin: 0 .25em ;
-        /*display: block;*/
-        /*height: 1px;*/
-        /*width: 2px;*/
+        width: auto;
+        flex-grow: 3;
+
+        /*display: flex;*/
+        /*!*position: relative;*!*/
+        /*justify-content: center;*/
+        /*align-items: stretch;*/
+        /*flex-direction: column;*/
+        /*margin: 0 .25em ;*/
+        /*!*display: block;*!*/
+        /*!*height: 1px;*!*/
+        /*!*width: 2px;*!*/
+        /*flex-grow: 3;*/
+        /*width: 100%;*/
 
     }
     .main{
@@ -111,5 +122,89 @@ body, html {
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:500px)  {*{
+    box-sizing: border-box;
+    margin: .5em;
+
+}
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+
+
+    }
+nav {
+display: flex;
+flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+.alert-info {
+    display: none;
+}
+
+    h1{
+        display: inline;
+        width: 100%;
+        font-size: 30px;
+        /*position: relative;*/
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+        /*flex-direction: column;*/
+        /*margin: 10px auto;*/
+        padding: .2em 0 0 .2em;
+        position: absolute;
+
+    }
+    .header-img{
+        display: flex;
+        /*position: relative;*/
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        margin: 0 .25em ;
+        /*display: block;*/
+        /*height: 1px;*/
+        /*width: 2px;*/
+        flex-grow: 3;
+        width: 100%;
+
+    }
+    .main{
+        /*display: flex;*/
+        display: inline-block;
+        width: 45%;
+        margin: auto;
+        list-style: none;
+
+
+    }
+    .sub-section{
+        /*display: flex;*/
+        display: inline-block;
+        width: 45%;
+        margin: auto ;
+        list-style: none;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+
+
+
     }
 }
