@@ -1,0 +1,115 @@
+/* screen sizes 500px and up */
+
+body, html {
+    /*height: 100%;*/
+    width: 100%;
+    padding: 0;
+    margin: 0 0.35em 0 .15em;
+    font-family: Arial, Ubuntu, sans-serif;
+    /*display: flex;*/
+    /*flex-direction: column; align-items: stretch;*/
+}
+@media screen and (min-width:260px) {
+    .nav-links{
+        padding: 0;
+    }
+
+   .nav-links li {
+
+     display: flex;
+    /* !*display: block;*!*/
+    /* !*width: 100%;*!*/
+    /* !*margin: 12px 0px ;*!*/
+     list-style: none;
+     padding: 1em;
+     border: 0.005em solid #DDDDDD;
+    /* !*margin: auto;*!*/
+     justify-content: center;
+    background-color:  #CCCCCC;
+     margin: .5rem 0 0 0;
+      width: 100%;
+    /* !*width: auto%;*!*/
+    /* flex: 0 1 auto;*/
+    /*!*!*flex-direction: column;align-items: stretc*/
+    /*   flex-direction: column; align-items: stretch;*/
+
+
+
+}
+    .alert-info {
+        display: flex;
+        /*display: block;*/
+        width: 100%;
+        /*margin: 12px 0px ;*/
+        list-style: none;
+        padding: 1em;
+        border: 0.005em solid #CCCCCC;
+        /*margin: auto;*/
+        justify-content: center;
+        background-color:  #CCFFFF;
+        margin-top: .5rem;
+
+    }
+    /*#main {*/
+    /*    padding: 3em;*/
+    /*    border: 0.005em solid black;*/
+    /*    margin: auto;*/
+
+    /*}*/
+    h1{
+        display: flex;
+        width: 100%;
+        font-size: 36px;
+        /*position: relative;*/
+        justify-content: center;
+        align-items: center;
+        /*flex-direction: column;*/
+        /*margin: 10px auto;*/
+        /*padding: 1.5em;*/
+    }
+
+
+    .header-img{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 .25em ;
+        /*display: block;*/
+        /*height: 1px;*/
+        /*width: 2px;*/
+
+    }
+    .main{
+        /*display: flex;*/
+        display: block;
+        width: 100%;
+        margin: 12px 0px ;
+        list-style: none;
+
+    }
+    .sub-section{
+        /*display: flex;*/
+        display: block;
+        width: 100%;
+        margin: 12px 0px ;
+        list-style: none;
+
+    }
+    #social-media-links {
+        display: flex;
+        justify-content: flex-end;
+
+    /*<i class="fa-brands fa-instagram"></i>*/
+    /*<i class="fa-brands fa-facebook-f"></i>*/
+    /*<i class="fa-brands fa-twitter"></i>*/
+    }
+    .footer {
+        <br>
+        display: block;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
